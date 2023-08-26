@@ -22,7 +22,7 @@ This Spring boot  project can be generated using the [spring initializr](https:/
 
 **Java version:** 17 (you can choose different Java version as well)
 
-**Packaging:** War
+**Packaging:** war
 
 **Dependencies:** Add necessary dependencies during project creation, you can add a new dependency manually at later point.
 
@@ -54,12 +54,15 @@ This Spring boot  project can be generated using the [spring initializr](https:/
 
 `HTTP POST: http://localhost:8080/api/v1/payment` with payload to store a transaction.
 
-Sample payload: `{
-"orderId": 1,
-"amount": 100,
-"referenceNumber": 1,
-"paymentMode": "CASH"
-}`
+Sample payload:
+```
+{
+  "orderId": 1,
+  "amount": 100,
+  "referenceNumber": 1,
+  "paymentMode": "CASH"
+}
+```
 
 `HTTP GET: http://localhost:8080/api/v1/payment/order/:orderId?currency=usd` to retrieve.
 
